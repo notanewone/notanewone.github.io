@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Shine Technologies Portal">
+		<title>Quotes</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			a {
+				color:black;
+			}
+			body {
+				font-size:small;
+			}
+			.sub-list {
+				list-style: none;
+				font-size: 8pt;
+
+			}
+			.sub-list li {
+				line-height: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<p class="note" align="center" style="padding-top: 10px;font-size: 20px;font-family: cursive, fantasy, serif;">
+			<script language="javascript" type="text/javascript">
+				quotes = [
+					"Innovation distinguishes between a leader and a follower. - Steve Jobs",
+					"Never discourage anyone...who continually makes progress, no matter how slow. ― Plato",
+					"I'm convinced that about half of what separates successful entrepreneurs from the non-successful ones is pure perseverance. - Steve Jobs",
+					"I cannot teach anybody anything. I can only make them think. ― Socrates",
+					"The only good is knowledge and the only evil is ignorance. ― Socrates",
+					"That's one reason I don't miss IT, because programmers are very unlikable people… In aviation, for example, people who greatly overestimate their level of skill are all dead. - Philip Greenspun",
+					"What's taking so long?<br/>I'm loading the second module...<br/>WHAT SECOND MODULE?!!!",
+					"Patience is bitter, but its fruit is sweet. ― Aristotle",
+					"I'll be in late today.<br/>I'll hold them off with artillery until the cavalry arrives. SIR! - CP",
+					"Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each. ― Plato",
+					"We're here to put a dent in the universe. Otherwise why else even be here? - Steve Jobs",
+					"Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them. - Steve Jobs",
+					"Be a yardstick of quality. Some people aren't used to an environment where excellence is expected. - Steve Jobs",
+					"Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead",
+					"Wonder is the beginning of wisdom. ― Socrates",
+					"If you don't get what you want, you suffer; if you get what you don't want, you suffer; even when you get exactly what you want, you still suffer because you can't hold on to it forever. Your mind is your predicament. It wants to be free of change. Free of pain, free of the obligations of life and death. But change is law and no amount of pretending will alter that reality. ― Socrates",
+					"People who think they know everything are a great annoyance to those of us who do. - Isaac Asimov",
+					"It is not enough to win a war; it is more important to organize the peace. ― Aristotle",
+					"Do not take life too seriously. You will never get out of it alive. - Elbert Hubbard",
+					"There cannot be a crisis next week. My schedule is already full. - Henry A. Kissinger",
+					"You can't just ask customers what they want and then try to give that to them. By the time you get it built, they'll want something new. - Steve Jobs",
+					"Getting information off the Internet is like taking a drink from a fire hydrant. - Mitchell Kapor",
+					"Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clarke",
+					"Microsoft isn't evil, they just make really crappy operating systems. - Linus Torvalds",
+					"Everybody has their own struggles, so be kind.",
+					"The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. ― Socrates",
+					"Let him who would move the world first move himself. ― Socrates",
+					"Do not do to others what angers you if done to you by others. ― Socrates",
+					"We cannot solve our problems with the same thinking we used when we created them. - Albert Einstein",
+					"If you cannot do great things, do small things in a great way. - Napoleon Hill",
+					"Keep your face always toward the sunshine - and shadows will fall behind you. - Walt Whitman",
+					"The journey of a thousand miles begins with one step. - Lao Tzu",
+					"The best preparation for tomorrow is doing your best today. - H. Jackson Brown, Jr.",
+					"I am the wisest man alive, for I know one thing, and that is that I know nothing. ― Socrates",
+					"The secret of getting ahead is getting started. - Mark Twain",
+					"Wise men speak because they have something to say; Fools because they have to say something. - Plato",
+					"Problems are not stop signs, they are guidelines. - Robert H. Schuller",
+					"The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails. - William Arthur Ward",
+					"In three words I can sum up everything I've learned about life: it goes on. - Robert Frost",
+					"It's not that I'm so smart, it's just that I stay with problems longer. - Albert Einstein",
+					"Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible. - Francis of Assisi",
+					"Have you ever noticed that anybody driving slower than you is an idiot, and anyone going faster than you is a maniac? - George Carlin",
+					"You just can't beat the person who never gives up. - Babe Ruth",
+					"If you fell down yesterday, stand up today. - H. G. Wells",
+					"Yesterday's the past, tomorrow's the future, but today is a gift. That's why it's called the present. - Bil Keane",
+					"The secret of your future is hidden in your daily routine. - Mike Murdock",
+					"Nothing can be done except little by little. - Charles Baudelaire",
+					"Every action has its pleasures and its price. ― Socrates",
+					"Prefer knowledge to wealth, for the one is transitory, the other perpetual. ― Socrates",
+					"We cannot live better than in seeking to become better. ― Socrates",
+					"Be brave. Take risks. Nothing can substitute experience. - Paulo Coelho",
+					"Someone is sitting in the shade today because someone planted a tree a long time ago. - Warren Buffett",
+					"Your present circumstances don't determine where you can go; they merely determine where you start. - Nido Qubein",
+					"Happiness is not something you postpone for the future; it is something you design for the present. - Jim Rohn",
+					"Some are born great, some achieve greatness, and some have greatness thrust upon them. - William Shakespeare",
+					"It's not what happens to you, but how you react to it that matters. - Epictetus",
+					"Knowledge is of no value unless you put it into practice. - Anton Chekhov",
+					"The best way to predict the future is to invent it. - Alan Kay",
+					"There are many ways of going forward, but only one way of standing still. - Franklin D. Roosevelt",
+					"Let us act on what we have, since we have not what we wish. - John Henry Newman",
+					"There is no I in team",
+					"friends welcome relatives by appointment",
+					"There's A Hell In Hello, Good In Goodbye, Lie In Believe, Over In Lover, End In Friend & An If In Life.",
+					"No one is perfect - that's why pencils have erasers. - Wolfgang Riebe",
+					"Winning doesn't always mean being first. Winning means you're doing better than you've done before. - Bonnie Blair",
+					"'Excellence' is not a gift, but a skill that takes practice. We do not act 'rightly' because we are 'excellent', in fact we achieve 'excellence' by acting 'rightly'. ― Plato",
+					"You're braver than you believe, and stronger than you seem, and smarter than you think. - A.A. Mine",
+					"It always seems impossible until it is done. - Nelson Mandela",
+					"The only time you fail is when you fall down and stay down. - Stephen Richards",
+					"Winning is fun, but those moments that you can touch someone's life in a very positive way are better. - Tim Howard",
+					"The sun himself is weak when he first rises, and gathers strength and courage as the day gets on. - Charles Dickens",
+					"All your dreams can come true if you have the courage to pursue them - Walt Disney",
+					"Tough times never last, but tough people do - Robert H. Schuller",
+					"Believe you can and you're halfway there - Theodore Roosevelt",
+					"The antidote for fifty enemies is one friend. ― Aristotle",
+					"It's not whether you get knocked down, it's whether you get up. - Vince Lombardi",
+					"Good actions give strength to ourselves and inspire good actions in others. ― Plato",
+					"The struggle you're in today is developing the strength you need tomorrow. - Robert Tew",
+					"The way I see it, if you want the rainbow, you gotta put up with the rain. - Dolly Parton",
+					"Every day may not be good... but there's something good in every day. - Alice Morse Earle",
+					"The more you praise and celebrate your life, the more there is in life to celebrate. - Oprah Winfrey",
+					"The difference between ordinary and extraordinary is that little extra. - Jimmy Johnson",
+					"Be thankful for everything that happens in your life; it's all an experience - Roy T. Bennett",
+					"Wherever you go, no matter what the weather, always bring your own sunshine. - Anthony J. D'Angelo",
+					"Success is the sum of small efforts repeated day in and day out. - Robert Collier",
+					"When we are open to new possibilities, we find them. Be open and skeptical of everything. - Todd Kashdan",
+					"The good life is a process, not a state of being. It is a direction, not a destination. - Carl Rogers",
+					"The real discoveries are found in the differences, not the similarities - David Livermore",
+					"Love the life you live. Live the life you love - Bob Marley",
+					"An empty vessel makes the loudest sound, so they that have the least wit are the greatest babblers. ― Plato",
+					"Hope lies in dreams, in imagination, and in the courage of those who dare to make dreams into reality. - Jonas Salk",
+					"Leadership is not about overpowering others, but instead, it is about empowering others - BJ Gonzalvo",
+					"Leadership is an art that begins and ends with honest, effective communication - George J. Thompson, ‎Gregory A. Walker",
+					"Leadership is not about manipulation but inspiration - Idowu Kotila",
+					"The cloudy weather melts at length into beauty, and the brightest smiles of the heart are born of its tears - Hosea Ballou",
+					"Actions always speak louder than words. People who are honourable and who have integrity say what they mean and mean what they say - Corey Wayne",
+					"Courage comes from confidence, and confidence comes from knowledge - R. Camper Bull",
+					"The more you know, the more you know you don't know. ― Aristotle",
+					"Big dreams start small. Break down your big goals into mini goals. That's how you make success look easy! - RD King",
+					"Those who forget history are doomed to repeat it - Winston Churchill",
+					"The only duty we owe to history is to rewrite it - Oscar Wilde",
+					"History is the study of other people's mistakes - Philip Guedalla",
+					"The bitterest truth is better than the sweetest lie. - Michael Stuhlbarg",
+					"Change always comes later than we think it should - Jean-Luc Picard",
+					"It's better to be curious than fear the unknown - Sandeep Ravidutt Sharma",
+					"Copy-and-Paste was programmed by programmers for programmers actually.",
+          "Software and cathedrals are much the same — first we build them, then we pray. - Sam Redwine",
+					"If debugging is the process of removing bugs, then programming must be the process of putting them in.",
+					"One man's crappy software is another man's full time job. - Jessica Gaston",
+					"Don't worry if it doesn't work right. If everything did, you'd be out of a job. - Mosher's Law of Software Engineering",
+					"It's not a bug — it's an undocumented feature.",
+					"It works on my machine.",
+					"Dot the i's and cross the t's",
+					"Walking on water and developing software from a specification are easy if both are frozen. - Edward V Berard",
+					"understanding a question is half an answer. ― Socrates",
+					"True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us. ― Socrates",
+					"The best thing about a boolean is even if you are wrong, you are only off by a bit.",
+					"Necessity is the mother of invention. ― Plato",
+					".NET is called .NET so that it wouldn't show up in a UNIX directory listing.",
+					"Computers are good at following instructions, but not at reading your mind. - Donald Knuth",
+					"The best way to get accurate information on Usenet is to post something wrong and wait for corrections. - Matthew Austern",
+					"The computer was born to solve problems that did not exist before. - Bill Gates",
+					"In theory there is no difference between theory and practice - in practice there is. - Yogi Berra",
+					"Experience is the name everyone gives to their mistakes. – Oscar Wilde",
+					"Optimism is an occupational hazard of programming: feedback is the treatment. - Kent Beck",
+					"Simplicity is the soul of efficiency. – Austin Freeman",
+					"Make it work, make it right, make it fast. – Kent Beck",
+					"The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie",
+					"Sometimes it's better to leave something alone, to pause, and that's very true of programming. - Joyce Wheeler",
+					"Testing leads to failure, and failure leads to understanding. - Burt Rutan",
+					"The best error message is the one that never shows up. - Thomas Fuchs",
+					"Don't write better error messages, write code that doesn't need them. - Jason C. McDonald",
+					"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. – Patrick McKenzie",
+					"No one in the brief history of computing has ever written a piece of perfect software. It's unlikely that you'll be the first. – Andy Hunt",
+					"One of the best programming skills you can have is knowing when to walk away for a while. – Oscar Godson",
+					"It's hard enough to find an error in your code when you're looking for it; it's even harder when you've assumed your code is error-free. – Steve McConnell",
+					"It's a curious thing about our industry: not only do we not learn from our mistakes, but we also don't learn from our successes. - Keith Braithwaite",
+					"The best performance improvement is the transition from the nonworking state to the working state. - J. Osterhout",
+					"The trouble with programmers is that you can never tell what a programmer is doing until it's too late. - Seymour Cray",
+					"By failing to prepare, you are preparing to fail. - Benjamin Franklin",
+					"Forewarned, forearmed; to be prepared is half the victory. - Miguel de Cervantes",
+					"We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run. - Roy Amara",
+					"It is during our darkest moments that we must focus to see the light. ― Aristotle"
+				];
+
+				var randNo = 0;
+				try {
+					randNo = crypto.getRandomValues(new Uint32Array(1))[0] / (Math.pow(2, 32) - 1);
+				} catch(err) {
+					randNo = Math.random();
+				}
+				var rand = Math.round(randNo * (quotes.length - 1));
+				document.write(quotes[rand]);
+			</script>
+		</p>
+	</body>
+</html>
